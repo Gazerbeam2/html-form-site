@@ -6,27 +6,78 @@
     <title>HTML Form Site</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="/form-handling-url" method="post">
+
     <fieldset>
         <legend>Add user</legend>
-        <label for="firstname"><input id="firstname" type="text">Enter First name:</label>
-        <input type="text">
-        <input type="email">
-        <label for=""><select name="" id="">
-            <option value="Student">One</option>
-            <option value="Instructor">Two</option>
-            <option value="Guest">Three</option>
-        </select>Status</label>
+        <section>
+        <div>
+            <label for="firstName">Enter First name:</label>
+            <input id="firstName" type="text" name="first_name">
+        </div>
 
-        <p>Choose your favorite programming language.</p>
-        <label for=""><input type="radio" >HTML</label>
-        <label for=""><input type="radio">CSS</label>
-        <label for=""><input type="radio">Javascript</label>
-        <label for=""><textarea name="" id="" cols="30" rows="10">Comments</textarea></label>
-        <label for=""><input type="checkbox">Sign up for newsletter</label>
-        <label for=""><input type="text">Agree to terms and conditions</label>
-        <label for=""><button type="submit">Submit</label>
 
+        <div>
+            <label for="lastName">Enter Last name:</label>
+            <input type="text" id="lastName" name="first_name">
+        </div>
+
+        <div>
+            <label for="email">Enter Email here:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="status">Status:</label>
+            <select id="status">
+            <option value="student">Student</option>
+            <option value="instructor" >Instructor</option>
+            <option value="guest">Guest</option>
+            </select>
+        </div>
+        </section>
+
+        <section>
+            <p>Choose your favorite programming language.</p>
+
+        <div>
+            <input type="radio" id="html">
+            <label for="html">HTML</label>
+        </div>
+
+        <div>
+            <input type="radio" id="css">
+            <label for="css">CSS</label>
+        </div>
+
+        <div>
+            <label for="javascript"><input type="radio" id="javascript">Javascript</label>
+        </div>
+        </section>
+
+        <section>
+        <div>
+            <label for="commentSection">Comments:</label>
+            <textarea name="" id="commentSection" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="date">Enter Date here:</label>
+            <input type="date" id="date">
+        </div>
+        </section>
+
+        <section>
+        <div>
+        <label for="newsletter"><input type="checkbox" id="newsletter">Sign up for newsletter</label>
+        </div>
+        <div>
+        <label for="termsAndConditions"><input type="checkbox" id="termsAndConditions">Agree to terms and conditions</label>
+        </div>
+        <div>
+        <label for=id="submitButton"><button type="submit" id="submitButton">Submit</label>
+        </div>
+        </section>
     </fieldset>
 </form>
 
